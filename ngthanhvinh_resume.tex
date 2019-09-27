@@ -1,0 +1,193 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{multirow}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSmallSubheading}[1]{
+  \item
+    \textbf{#1}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textbf{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumePoint}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & \textbf{\small #2}
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \multirow{3}{*}{\textbf{\Huge{Vinh Nguyen}}} & {\small Email: \texttt{\underline{\href{mailto:ngthanhvinh2000@gmail.com}{ngthanhvinh2000@gmail.com}}}}\\
+   & {\small Github: \texttt{\underline{\href{https://github.com/ngthanhvinh}{https://github.com/ngthanhvinh}}}} \\
+   & {\small Website: \texttt{\underline{\href{https://ngthanhvinh.github.io/}{https://ngthanhvinh.github.io/}}}} \\
+   & {\small Mobile: +33 7 60 25 50 49} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ecole Polytechnique}{Palaiseau, France}
+      {Bachelor of Science - Double degree in Mathematics and Computer Science}{Sep 2019 -- Jun 2022 (expected)}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {VinAI Research Lab}{Hanoi, Vietnam}
+      {AI Engineer Intern}{May 2019 - Aug 2019}
+      \resumeItemListStart
+        \resumeItem{}
+          {Collected raw data from different online sources to form a dataset called \textbf{PlasticVNOI}, which consisted of over \textbf{1000 images containing plastic bags}. Most of the images were then annotated manually, while the others were machine-annotated and human-verified.}
+        \resumeItem{}
+          {Integrated the \textbf{PlasticVNOI dataset} with the well-known {\href{http://host.robots.ox.ac.uk/pascal/VOC/}{\textbf{\underline{PASCAL VOC dataset}}}}, and eventually used the combined data to develop an accurate \textbf{Faster RCNN} model to detect plastic bags on many polluted streets in Vietnam.}
+        \resumeItem{Utilizing: }
+          {Tensorflow, OpenCV, Keras.}
+        \resumeItem{Source: }
+          {\href{https://github.com/ngthanhvinh/plasticbag-faster-rcnn}{\underline{\texttt{https://github.com/ngthanhvinh/plasticbag-faster-rcnn}}}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {HUS High School for Gifted Students}{Hanoi, Vietnam}
+      {Informatics Tutor}{Jan 2017 - Jan 2019}
+      \resumeItemListStart
+        \resumeItem{}
+          {Instructed high school students to prepare for the Vietnam National Olympiad in Informatics, with the content covering from the \textbf{C/C++ programming language} to \textbf{algorithms} and \textbf{data structures}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------AWARDS AND HONORS-----------------
+\section{Awards and Honors}
+  \resumeSubHeadingListStart
+    \resumePoint
+      {\textbf{Top 5}, Vietnam Team Selection Contest in Informatics}{May 2018}
+    \vspace*{-0.7cm}\resumePoint
+      {\textbf{Gold Medal}, Singapore National Olympiad in Informatics}{Mar 2018}
+    \vspace*{-0.7cm}\resumePoint
+      {\textbf{First Prize}, Vietnam National Olympiad in Informatics}{Jan 2018}
+    \vspace*{-0.7cm}\resumePoint
+      {\textbf{Third Prize}, Vietnam National Olympiad in Informatics}{Jan 2017}
+  \resumeSubHeadingListEnd
+
+
+%--------PROJECTS------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSmallSubheading{React 2D Gameboard, HSGS Hackathon 2018}
+    \resumeItemListStart
+      \resumeItem{}
+        {Led a team of 4 students to design the online graphical interface for several 2D math puzzles with \textbf{ReactJS}.}
+      \resumeItem{Source: }
+      {\href{https://github.com/ngthanhvinh/hsgs-hackathon-18}{\underline{\texttt{https://github.com/ngthanhvinh/hsgs-hackathon-18}}}.}
+    \resumeItemListEnd
+
+    \resumeSmallSubheading{SDL Tetris}
+    \resumeItemListStart
+      \resumeItem{}
+        {A well-designed console game based on the traditional Tetris game with some modified rules.}
+      \resumeItem{}
+        {Implemented all logical "back-end" functions (such as scoring, rotations and left/right/down movements) for the game.}
+      \resumeItem{Source: }
+      {\href{https://github.com/zimportant/SDL_Tetris}{\underline{\texttt{https://github.com/zimportant/SDL\_Tetris}}}.}
+    \resumeItemListEnd
+
+    \resumeSmallSubheading{ObjTest}
+    \resumeItemListStart
+      \resumeItem{}
+        {A web app which is able to classify the object on images.}
+      \resumeItem{Utilizing}
+        {Flask back-end, React front-end, Tensorflow, VGG16 pre-trained model.}
+      \resumeItem{Source: }
+      {\href{https://github.com/ngthanhvinh/ObjTest}{\underline{\texttt{https://github.com/ngthanhvinh/ObjTest}}}.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \resumePoint
+    {\textbf{Languages}: C/C++, Python, JavaScript, TypeScript.}{}
+  \vspace*{-0.7cm}\resumePoint
+    {\textbf{Technologies}: Git, React, NodeJS, Flask, Tensorflow, OpenCV, Keras.}{}
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

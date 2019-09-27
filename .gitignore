@@ -1,2 +1,3 @@
-# Archieve
-Archieve/
+*.aux
+*.log
+*.out
