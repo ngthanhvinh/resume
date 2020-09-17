@@ -89,7 +89,6 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \multirow{3}{*}{\textbf{\Huge{Vinh Nguyen}}} & {\small Email: \texttt{\underline{\href{mailto:ngthanhvinh2000@gmail.com}{ngthanhvinh2000@gmail.com}}}}\\
    & {\small Github: \texttt{\underline{\href{https://github.com/ngthanhvinh}{https://github.com/ngthanhvinh}}}} \\
-   & {\small Website: \texttt{\underline{\href{https://ngthanhvinh.github.io/}{https://ngthanhvinh.github.io/}}}} \\
    & {\small Mobile: +33 7 60 25 50 49} \\
 \end{tabular*}
 
@@ -99,7 +98,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Ecole Polytechnique}{Palaiseau, France}
-      {Bachelor of Science - Double degree in Mathematics and Computer Science}{Sep 2019 -- Jun 2022 (expected)}
+      {Double degree in Mathematics and Computer Science (CGPA: 4.18 / 4.3)}{Sep 2019 -- Jun 2022 (expected)}
   \resumeSubHeadingListEnd
 
 
@@ -108,15 +107,27 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+      {DatakaLab}{Paris, France}
+      {Software Engineer Intern}{Jul 2020 - Sep 2020}
+      \resumeItemListStart
+        \resumeItem{}
+          {Worked on the Smart Counting product, which focuses on tracking people and obtaining statistical data regarding gender/age/attention via camera stream without storing the images.}
+        \resumeItem{}
+          {Researched and implemented a graph-based algorithm which merges trajectories of people, utilizing the Kalman filter (also known as linear quadratic estimation) combined with DatakaLab's ReID model. The new approach helped improve the tracking accuracy (in terms of ID switches, fragmentations, counting) by a large margin, compared to the old method.}
+        \resumeItem{}
+          {Languages - Technologies: \textbf{Python, OpenCV}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {VinAI Research Lab}{Hanoi, Vietnam}
       {AI Engineer Intern}{May 2019 - Aug 2019}
       \resumeItemListStart
         \resumeItem{}
-          {Collected raw data from different online sources to to create \textbf{PlasticVNOI}, a dataset consisting of over \textbf{1000 images containing plastic bags}. Most of the images were then annotated manually, while the others were machine-annotated and human-verified.}
+          {Collected raw data from different online sources to create a dataset consisting of over 1000 annotated images containing plastic bags.}
         \resumeItem{}
-          {Integrated the \textbf{PlasticVNOI dataset} with the well-known {\href{http://host.robots.ox.ac.uk/pascal/VOC/}{\textbf{\underline{PASCAL VOC dataset}}}}, and eventually used the combined data to develop an accurate \textbf{Faster RCNN} model to detect plastic bags on many polluted streets in Vietnam.}
+          {Developed an accurate \textbf{Faster RCNN} model to detect plastic bags on many polluted streets in Vietnam.}
         \resumeItem{}
-          {Languages - Technologies: \textbf{Python, Tensorflow, OpenCV, Keras.}}
+          {Languages - Technologies: \textbf{Python, Tensorflow, Keras, Matplotlib}.}
         \resumeItem{}
           {Source: \href{https://github.com/VinAIResearch/plasticbag-faster-rcnn}{\underline{\texttt{https://github.com/VinAIResearch/plasticbag-faster-rcnn}}}.}
       \resumeItemListEnd
@@ -138,9 +149,9 @@
     \resumePoint
       {\textbf{Ranked 1st}, Southwestern Europe Regional Contest (SWERC) 2019-2020}{Jan 2020}
       \vspace{-0.6cm}\resumeItemListStart
-        \resumeItem{}{Competed in a team of three to solve 10-12 algorithmic problems in five hours, using C++/Python. 
+        \resumeItem{}{Competed in a team of three to solve 10-12 algorithmic problems in five hours, using \textbf{C++/Python}. 
         In total, 100 teams from 51 institutions of Southwestern Europe (France, Switzerland, Spain, Italy, Portugal and Israel) 
-        participated in this contest. Qualified for the ICPC World Finals 2020 in Moscow.}
+        participated in this contest. Qualified for the \href{https://icpc.global/}{\textbf{ICPC World Finals 2020}} in Moscow.}
       \resumeItemListEnd
    \resumePoint
       {\textbf{Gold Medal}, Vietnam National Olympiad in Informatics}{Jan 2018}
@@ -158,46 +169,59 @@
     \resumePoint
       {\textbf{Gold Medal}, Singapore National Olympiad in Informatics}{Mar 2018}
       \vspace{-0.6cm}\resumeItemListStart
-        \resumeItem{}{Invited to Singapore to compete with the best contestants in Southeast Asia, solving algorithmic problems in 5 hours. 
+        \resumeItem{}{Competed individually with the best contestants in Southeast Asia, solving algorithmic problems in 5 hours. 
         Won the first place with a perfect score.}
       \resumeItemListEnd
-    \resumePoint
-      {\textbf{Top 1\%}, Codeforces}{}
-      \vspace{-0.6cm}\resumeItemListStart
-        \resumeItem{}{{\href{https://codeforces.com/}{\underline{Codeforces}}} is a competitive programming website with over 60,000 active users.}
-      \resumeItemListEnd
+    % \resumePoint
+    %   {\textbf{Top 1\%}, Codeforces}{}
+    %   \vspace{-0.6cm}\resumeItemListStart
+    %     \resumeItem{}{{\href{https://codeforces.com/}{\underline{Codeforces}}} is a competitive programming website with over 60,000 active users.}
+    %   \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %--------PROJECTS------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSmallSubheading{React 2D Gameboard, HSGS Hackathon 2018}
-    \resumeItemListStart
-      \resumeItem{}
-        {Led a team of 4 students to design the online graphical interface for several 2D math puzzles with \textbf{React}.}
-      \resumeItem{}
-      {Source: \href{https://github.com/ngthanhvinh/hsgs-hackathon-18}{\underline{\texttt{https://github.com/ngthanhvinh/hsgs-hackathon-18}}}.}
-    \resumeItemListEnd
+    \resumeSmallSubheading{knowurmusic}
+      \resumeItemListStart
+        \resumeItem{}
+          {Led a team of two to design and implement a web app which displays music data of users using Spotify API.}
+        \resumeItem{}
+          {Languages - Technologies: \textbf{React/Redux (JavaScript), HTML, CSS}.}
+        \resumeItem{}
+          {Source: \href{https://github.com/ngthanhvinh/knowurmusic}{\underline{\texttt{https://github.com/ngthanhvinh/knowurmusic}}}.}
+        \resumeItem{}
+          {Website: \href{https://knowurmusic.herokuapp.com/}{\underline{\texttt{https://knowurmusic.herokuapp.com/}}}.}
+      \resumeItemListEnd
 
-    % \resumeSmallSubheading{SDL Tetris}
+    % \resumeSmallSubheading{React 2D Gameboard, HSGS Hackathon 2018}
     % \resumeItemListStart
     %   \resumeItem{}
-    %     {A well-designed console game based on the traditional Tetris game with some modified rules.}
+    %     {Led a team of 4 students to design the online graphical interface for several 2D math puzzles with \textbf{React}.}
     %   \resumeItem{}
-    %     {Implemented all logical "back-end" functions (such as scoring, rotations and left/right/down movements) in \textbf{C/C++}.}
-    %   \resumeItem{}
-    %   {Source: \href{https://github.com/zimportant/SDL_Tetris}{\underline{\texttt{https://github.com/zimportant/SDL\_Tetris}}}.}
+    %   {Source: \href{https://github.com/ngthanhvinh/hsgs-hackathon-18}{\underline{\texttt{https://github.com/ngthanhvinh/hsgs-hackathon-18}}}.}
     % \resumeItemListEnd
 
-    \resumeSmallSubheading{ObjTest}
+    \resumeSmallSubheading{SDL Tetris}
     \resumeItemListStart
       \resumeItem{}
-        {A web app for object classification, utilizing the \textbf{VGG16 pretrained model}.}
+        {A well-designed console game based on the traditional Tetris game with some modified rules.}
       \resumeItem{}
-        {Languages - Technologies: \textbf{Python, JavaScript, NodeJS, Flask, React, HTML, CSS, Tensorflow, Keras.}}
+        {Implemented all logical functions (such as scoring, rotations and left/right/down movements) in \textbf{C/C++}.}
       \resumeItem{}
-      {Source: \href{https://github.com/ngthanhvinh/ObjTest}{\underline{\texttt{https://github.com/ngthanhvinh/ObjTest}}}.}
+      {Source: \href{https://github.com/zimportant/SDL_Tetris}{\underline{\texttt{https://github.com/zimportant/SDL\_Tetris}}}.}
     \resumeItemListEnd
+
+    % \resumeSmallSubheading{ObjTest}
+    % \resumeItemListStart
+    %   \resumeItem{}
+    %     {A web app for object classification, utilizing the \textbf{VGG16 pretrained model}.}
+    %   \resumeItem{}
+    %     {Languages - Technologies: \textbf{Python, JavaScript, NodeJS, Flask, React, HTML, CSS, Tensorflow, Keras.}}
+    %   \resumeItem{}
+    %   {Source: \href{https://github.com/ngthanhvinh/ObjTest}{\underline{\texttt{https://github.com/ngthanhvinh/ObjTest}}}.}
+    % \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 
